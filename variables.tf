@@ -10,3 +10,7 @@ variable "environment_variables" {
   type = "map"
   default = {}
 }
+
+variable "vpc_config" {
+  type = "map"
+}
