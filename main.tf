@@ -14,7 +14,7 @@ resource "aws_lambda_function" "function" {
     variables = "${var.environment_variables}"
   }
 
-  # Add a way of specifying environment variables externally!
+  vpc_config = "${var.vpc_config}"
 }
 
 resource "aws_lambda_permission" "resource" {
