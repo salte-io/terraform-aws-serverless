@@ -8,9 +8,22 @@ variable "api_id" {}
 
 variable "environment_variables" {
   type = "map"
-  default = {}
+  default = {
+    dummy = "dummy"
+  }
 }
 
-variable "vpc_config" {
+variable "subnet_ids" {
+  type = "list"
+  default = []
+}
+
+variable "security_group_ids" {
+  type = "list"
+  default = []
+}
+
+variable "tags" {
   type = "map"
+  default = {}
 }
