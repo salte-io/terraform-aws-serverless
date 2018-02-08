@@ -44,7 +44,6 @@ resource "aws_api_gateway_integration" "integration" {
 
 module "CORS" {
   source = "github.com/carrot/terraform-api-gateway-cors-module"
-  resource_name = "CORS"
   resource_id = "${var.resource_id}"
   rest_api_id = "${var.api_id}"
 }
