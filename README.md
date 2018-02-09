@@ -1,3 +1,5 @@
+[![Terraform](https://img.shields.io/badge/terraform-published-blue.svg)](https://registry.terraform.io/modules/salte-io/serverless/aws)
+
 # Terraform Module: Serverless
 
 > This repository is a [Terraform](https://terraform.io/) Module for simplifying the deployment of Lambda Functions to API Gateway.
