@@ -42,7 +42,7 @@ resource "aws_api_gateway_resource" "resource" {
 resource "aws_lambda_function" "function" {
   filename         = "example-zip-file-name.zip"
   function_name    = "example-function-name"
-  role             = "${aws_iam_role.role.arn}"
+  role             = "${data.aws_iam_role.role.arn}"
   handler          = "src/example-file-name.handler"
   source_code_hash = "${base64sha256(file("example-zip-file-name.zip"))}"
   runtime          = "nodejs8.10"
